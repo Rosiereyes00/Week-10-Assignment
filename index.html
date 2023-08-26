@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hospital check-in</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  </head>
+<body class="container">
+        <br>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm">
+                <div class="form-group">
+                  <label for="new-start-date"> Check-in Date</label>
+                  <input type="date" class="form-control" id="new-start-date" >
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="form-group">
+                  <label for="new-End-date">release date</label>
+                  <input type="date" class="form-control" id="new-End-date" >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <div class="form-group">
+                  <label for="new-task">reason</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="new-task"
+                    placeholder="medical reason"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <button id="add" class="btn btn-primary form control">Add Patient</button>
+            </div>
+          </div>
+        </div>
+        <table id="list" class="table table-dark table-striped">
+            <tr>
+                <th>Appointment Type</th>
+                <th>Date Created</th>
+                <th>Check-in Date</th>
+                <th>Appointment Duration</th>
+                <th>Actions</th>
+              </tr>
+        </table>
+
+        <style> 
+        div{
+            background-color: rgb(212, 178, 243);
+            
+        }
+        </style>
+    <script src="index.js"></script>
+    <script src="styles.css"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+  </body>
+</html>
